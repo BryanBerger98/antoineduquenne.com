@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+              var page = $(this).attr('href'); // Page cible
+              var speed = 750; // Durée de l'animation (en ms)
+              $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+              return false;
+          });
+      });
+    </script>
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
+    <link rel="shortcut icon" href="img/logo.png">
+    <title>Antoine Duquenne</title>
+  </head>
+  <body>
+
+    <!-- NavBar -->
+    <div id="home">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-productions" id="nav-content">
+        <div class="col-6">
+          <a class="navbar-brand" href="#">Antoine Duquenne I N F O G R A P H I S T E</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="col-6">
+          <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scrollTo" href="index.html#home">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scrollTo" href="index.html#about">A Propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scrollTo" href="index.html#skills">Compétences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scrollTo" href="index.html#products">Productions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="sommaire">
+      <div class="jumbotron jumbotron-fluid mb-0 pb-2">
+        <div class="container">
+          <h1 class="display-4 pb-2">Sommaire</h1>
+          <ul class="nav flex-column">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle som-title js-scrollTo" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                1. Identités Visuelles
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item js-scrollTo" href="#id_visuelle_personnelle">a) Identité visuelle personnelle</a>
+                <a class="dropdown-item js-scrollTo" href="#stylisation_logotype">b) Stylisation logotype</a>
+                <a class="dropdown-item js-scrollTo" href="#mockup_cartes_visite_depanneur">c) Cartes de visite et flyer Dépanneur informatique</a>
+                <a class="dropdown-item js-scrollTo" href="#logotype_crypto">d) Logotype Cryptomonnaie</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav flex-column">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle som-title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                2. Typographies
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item js-scrollTo" href="#affiche_typographique">a) Affiche Typographique</a>
+                <a class="dropdown-item js-scrollTo" href="#affiche_film">b) Affiche de film</a>
+                <a class="dropdown-item js-scrollTo" href="#planisphere">c) Planisphère</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav flex-column">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle som-title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                3. Mises en page
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item js-scrollTo" href="#brochure_vacances">a) Brochure de vacances</a>
+                <a class="dropdown-item js-scrollTo" href="#declinaison_colorimetrique">b) Déclinaison Colorimétrique</a>
+                <a class="dropdown-item js-scrollTo" href="#infographie">c) Infographie</a>
+                <a class="dropdown-item js-scrollTo" href="#conception_magazine">d) Conception de Magazine</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle som-title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                4. Projet Paris Plage
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item js-scrollTo" href="#logotype_pp">a) Logotype</a>
+                <a class="dropdown-item js-scrollTo" href="#brochure_pp">b) Brochure</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle som-title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                5. Photomontages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item js-scrollTo" href="#bolchoi">a) Bolchoï</a>
+                <a class="dropdown-item js-scrollTo" href="#double_face">b) Double Face</a>
+                <a class="dropdown-item js-scrollTo" href="#affiche_roland_garros">c) Affiche Roland Garros</a>
+                <a class="dropdown-item js-scrollTo" href="#affiche_geometrique">d) Affiche Géométrique</a>
+                <a class="dropdown-item js-scrollTo" href="#affiche_barber_shop">e) Affiche Barber Shop</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle som-title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                6. Pictogrammes
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item js-scrollTo" href="#collection_jo_hiver_2018">a) Collection JO d'hiver 2018</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle som-title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                7. Illustrations Vectorielles
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item js-scrollTo" href="#conception_famille_superheros">a) Conception Famille de Superhéros</a>
+                <a class="dropdown-item js-scrollTo" href="#word_as_image">b) Word as Image</a>
+                <a class="dropdown-item js-scrollTo" href="#masque_calavera">c) Masque Calavera</a>
+                <a class="dropdown-item js-scrollTo" href="#portrait_typographique">d) Portrait Typographique</a>
+                <a class="dropdown-item js-scrollTo" href="#memory_card_game">e) Memory Card Game</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle som-title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                8. Packagings
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item js-scrollTo" href="#projet_ink">a) Projet INK</a>
+                <a class="dropdown-item js-scrollTo" href="#pasta_box">b) Boîtes de pates</a>
+              </div>
+            </li>
+          </ul>
+          <hr class="my-4">
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="jumbotron jumbotron-fluid mb-0 productions pb-5" id="products">
+      <div class="container">
+        <div class="pb-3">
+          <h1 class="display-4 pb-2">1. Identités visuelles</h1>
+          <h2 class=" pb-4" id="id_visuelle_personnelle">a) Identité visuelle personnelle</h2>
+        </div>
+        <div class="row">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/id_visuelle_perso/logo_perso_v1.png" class="products" alt="Logo V1">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/id_visuelle_perso/logo_perso_v1.png" target="_blank">Logo V1</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/id_visuelle_perso/logo_perso_v2.png" class="products" alt="Logo V2">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/id_visuelle_perso/logo_perso_v2.png" target="_blank">Logo V2</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/id_visuelle_perso/mockup_papeterie_ad.png" class="products" alt="Mockup">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/id_visuelle_perso/mockup_papeterie_ad.png" target="_blank">Mockup</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/id_visuelle_perso/cartes_visite_horizontales.png" class="products" alt="Cartes de visite">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/id_visuelle_perso/cartes_visite_horizontales.png" target="_blank">Cartes de visite</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/id_visuelle_perso/cartes_visite_verticales.png" class="products" alt="Cartes de visite">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/id_visuelle_perso/cartes_visite_verticales.png" target="_blank">Cartes de visite</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class=" pb-4" id="stylisation_logotype">b) Stylisation logotype</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/stylisation_logotype/madoqua.png" class="products" alt="Madoqua">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/stylisation_logotype/madoqua.png" target="_blank">Madoqua</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class=" pb-4" id="mockup_cartes_visite_depanneur">c) Cartes de visite & Flyer - Dépannage Informatique</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/id_depannage_informatique/logo_depanneur.png" class="products" alt="Logo Dépanneur Informatique">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/id_depannage_informatique/logo_depanneur.png" target="_blank">Logo Dépanneur Informatique</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/id_depannage_informatique/flyer_depanneur.png" class="products" alt="Flyer Dépanneur Informatique">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/id_depannage_informatique/flyer_depanneur.png" target="_blank">Flyer Dépanneur Informatique</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/id_depannage_informatique/mockup_flyer_depanneur.png" class="products" alt="Mockup Dépanneur Informatique">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/id_depannage_informatique/mockup_flyer_depanneur.png" target="_blank">Mockup Dépanneur Informatique</a>
+              </div>
+            </div>
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/id_depannage_informatique/mockup_cartes_visite_depanneur.png" class="products" alt="Mockup Dépanneur Informatique">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/id_depannage_informatique/mockup_cartes_visite_depanneur.png" target="_blank">Mockup Dépanneur Informatique</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class=" pb-4" id="logotype_crypto">d) Logotype - Cryptomonnaie</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/logo_crypto/planche_crypto.png" class="products" alt="Planche Cryptomonnaie">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/logo_crypto/planche_crypto.png" target="_blank">Logo OPS Coin</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+          </div>
+          <div class="col p-0">
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h1 class="display-4 pb-2">2. Typographies</h1>
+          <h2 class=" pb-4" id="affiche_typographique">a) Affiche typographique</h2>
+        </div>
+
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/typographies/affiche_typographique/poster_typo.png" class="products" alt="Poster Typo">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/typographies/affiche_typographique/poster_typo.png" target="_blank">Poster</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class="pb-4" id="affiche_film">b) Affiche de film</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/typographies/affiche_film/poster_inception.png" class="products" alt="Poster Inception">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/typographies/affiche_typographique/poster_inception.png" target="_blank">Poster Inception</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class="pb-4" id="planisphere">c) Planisphère</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/typographies/planisphere/planisphere_brique.png" class="products" alt="Planisphère Brique">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/typographies/planisphere/planisphere_brique.png" target="_blank">Planisphère Brique</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/typographies/planisphere/planisphere_mockup.png" class="products" alt="Mockup Planisphère">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/typographies/planisphere/planisphere_mockup.png" target="_blank">Mockup Planisphère</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h1 class="display-4 pb-2">3. Mises en page</h1>
+          <h2 class=" pb-4" id="brochure_vacances">a) Brochure de vacances</h2>
+        </div>
+
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/mise_en_page/brochure_vacances/brochure_y_aller.png" class="products" alt="Brochure vacances">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/mise_en_page/brochure_vacances/brochure_y_aller.png" target="_blank">Brochure</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class="pb-4" id="declinaison_colorimetrique">b) Déclinaison clorimétrique</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/mise_en_page/declinaison_colorimetrique/gamme_couleur.png" class="products" alt="Tatoo me">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/mise_en_page/declinaison_colorimetrique/gamme_couleur.png" target="_blank">Tatoo me</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class="pb-4" id="infographie">c) Infographie</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/mise_en_page/infographie/incrustation_infographie.png" class="products" alt="Incrustation">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/mise_en_page/infographie/incrustation_infographie.png" target="_blank">Incrustation</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class="pb-4" id="conception_magazine">d) Conception de magazine</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/mise_en_page/conception_magazine/magazine.png" class="products" alt="Magazine">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/mise_en_page/conception_magazine/magazine.png" target="_blank">Magazine</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h1 class="display-4 pb-2">4. Projet Paris Plage</h1>
+          <h2 class=" pb-4" id="logotype_pp">a) Logotype</h2>
+        </div>
+
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/projet_paris_plage/logotype/brandboard.png" class="products" alt="Brandboard">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/projet_paris_plage/logotype/brandboard.png" target="_blank">Brandboard</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/projet_paris_plage/logotype/brandboard2.png" class="products" alt="Brandboard">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/projet_paris_plage/logotype/brandboard2.png" target="_blank">Brandboard</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/projet_paris_plage/logotype/brandboard3.png" class="products" alt="Brochure vacances">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/projet_paris_plage/logotype/brandboard3.png" target="_blank">Cartes de visite</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class="pb-4" id="brochure_pp">b) Brochure</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/projet_paris_plage/brochure/mockup_pp_brochure1.png" class="products" alt="Mockup Brochure">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/projet_paris_plage/brochure/mockup_pp_brochure1.png" target="_blank">Mockup Brochure</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="col p-0">
+              <div class="image p-1">
+                <img src="img/productions/projet_paris_plage/brochure/mockup_pp_brochure2.png" class="products" alt="Mockup Brochure">
+                <div class="middle">
+                  <a role="button" class="btn text" href="img/productions/projet_paris_plage/brochure/mockup_pp_brochure2.png" target="_blank">Mockup Brochure</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h1 class="display-4 pb-2">5. Photomontages</h1>
+          <h2 class=" pb-4" id="bolchoi">a) Bolchoï</h2>
+        </div>
+
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/photomontages/bolchoi/bolchoi.png" class="products" alt="Brolchoï">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/photomontages/bolchoi/bolchoi.png" target="_blank">Bolchoï</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class="pb-4" id="double_face">b) Double face</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/photomontages/double_face/double_face.png" class="products" alt="Double Face">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/photomontages/double_face/double_face.png" target="_blank">Double Face</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class="pb-4" id="affiche_roland_garros">c) Affiche Roland Garros</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/photomontages/affiche_roland_garros/roland_garros.png" class="products" alt="Roland Garros">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/photomontages/affiche_roland_garros/roland_garros.png" target="_blank">Roland Garros</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class="pb-4" id="affiche_geometrique">d) Affiche Géométrique</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/photomontages/affiche_geometrique/affiche_geometrique.png" class="products" alt="Affiche Géométrique">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/photomontages/affiche_geometrique/affiche_geometrique.png" target="_blank">Affiche Géométrique</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class="pb-4" id="affiche_barber_shop">e) Affiche Barber Shop</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/photomontages/affiche_barber_shop/barber_shop_mockup.png" class="products" alt="Barber Shop">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/photomontages/affiche_barber_shop/barber_shop_mockup.png" target="_blank">Barber Shop</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h1 class="display-4 pb-2">6. Pictogrammes</h1>
+          <h2 class=" pb-4" id="collection_jo_hiver_2018">a) Collection JO d'hiver 2018</h2>
+        </div>
+
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/pictogrammes/collection_jo_hiver_2018/jo_mockup.png" class="products" alt="JO d'hiver 2018">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/pictogrammes/collection_jo_hiver_2018/jo_mockup.png" target="_blank">JO d'hiver 2018</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h1 class="display-4 pb-2">7. Illustrations Vectorielles</h1>
+          <h2 class=" pb-4" id="conception_famille_superheros">a) Conception Famille de Superhéros</h2>
+        </div>
+
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/illustrations_vectorielles/conception_famille_superheros/heroes_mockup.png" class="products" alt="Famille de Superhéros">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/illustrations_vectorielles/conception_famille_superheros/heroes_mockup.png" target="_blank">Famille de Superhéros</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class="pb-4" id="word_as_image">b) Word as Image</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/illustrations_vectorielles/word_as_image/word_as_image.png" class="products" alt="Word as Image">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/illustrations_vectorielles/word_as_image/word_as_image.png" target="_blank">Word as Image</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class="pb-4" id="masque_calavera">c) Masque de Calavera</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/illustrations_vectorielles/masque_calavera/calavera_mockup.png" class="products" alt="Masque de Calavera">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/illustrations_vectorielles/masque_calavera/calavera_mockup.png" target="_blank">Masque de Calavera</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class="pb-4" id="portrait_typographique">d) Portrait Typographique</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/illustrations_vectorielles/portrait_typographique/einstein_mockup.png" class="products" alt="Einstein">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/illustrations_vectorielles/portrait_typographique/einstein_mockup.png" target="_blank">Einstein</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class="pb-4" id="memory_card_game">e) Memory Card Game</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/illustrations_vectorielles/memory_card_game/memory_card_game.png" class="products" alt="Memory Card">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/illustrations_vectorielles/memory_card_game/memory_card_game.png" target="_blank">Memory Card</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h1 class="display-4 pb-2">8. Packagings</h1>
+          <h2 class=" pb-4" id="projet_ink">a) Projet INK</h2>
+        </div>
+
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/packagings/projet_ink/gabarit_packaging_ink.png" class="products" alt="Packaging INK">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/packagings/projet_ink/gabarit_packaging_ink.png" target="_blank">Packaging INK</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="col p-0">
+              <div class="image p-1">
+                <img src="img/productions/packagings/projet_ink/mockup_flyer_ink.png" class="products" alt="Flyer INK">
+                <div class="middle">
+                  <a role="button" class="btn text" href="img/productions/packagings/projet_ink/mockup_flyer_ink.png" target="_blank">Flyer INK</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+
+          </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="pt-5 pb-3">
+          <h2 class="pb-4" id="pasta_box">b) Boîtes de pates</h2>
+        </div>
+        <div class="row">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/packagings/pasta_box/photo1.png" class="products" alt="Photo 1">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/packagings/pasta_box/photo1.png" target="_blank">Photo 1</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/packagings/pasta_box/photo3.png" class="products" alt="Photo 3">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/packagings/pasta_box/photo3.png" target="_blank">Photo 3</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/packagings/pasta_box/photo4.png" class="products" alt="Photo 4">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/packagings/pasta_box/photo4.png" target="_blank">Photo 4</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pb-5">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/packagings/pasta_box/photo2.png" class="products" alt="Photo 2">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/packagings/pasta_box/photo2.png" target="_blank">Photo 2</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/packagings/pasta_box/packaging_coquillettes_gabarit.jpg" class="products" alt="Packaging Coquillettes">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/packagings/pasta_box/packaging_coquillettes_gabarit.jpg" target="_blank">Packaging Coquillettes</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/packagings/pasta_box/packaging_farfalles_gabarit.jpg" class="products" alt="Packaging Farfalles">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/packagings/pasta_box/packaging_farfalles_gabarit.jpg" target="_blank">Packaging Farfalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4">
+
+      </div> <!--End container-->
+    </div>
+
+    <footer>
+      <div class="jumbotron jumbotron-fluid mb-0 footer pt-4 pb-4 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h3>Navigation</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link js-scrollTo" href="#home">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scrollTo" href="#about">A Propos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scrollTo" href="#skills">Compétences</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scrollTo" href="#products">Productions</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>Contactez-moi !</h3>
+              <p class="mt-4">E-mail : antoineduquenne@hotmail.fr</p>
+              <p>Mobile : 07 61 91 34 81</p>
+            </div>
+            <div class="col">
+              <img src="img/logo.png" class="border rounded logo-footer p-3 mx-auto d-block" alt="Logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

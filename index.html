@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+              var page = $(this).attr('href'); // Page cible
+              var speed = 750; // Durée de l'animation (en ms)
+              $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+              return false;
+          });
+      });
+    </script>
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
+    <link rel="shortcut icon" href="img/logo.png">
+    <title>Antoine Duquenne</title>
+  </head>
+  <body>
+
+    <!-- NavBar -->
+    <div class="bg" id="home">
+      <nav class="navbar navbar-expand-lg navbar-light" id="nav-content">
+        <div class="col-6">
+          <a class="navbar-brand" href="#">Antoine Duquenne I N F O G R A P H I S T E</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="col-6">
+          <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scrollTo" href="#home">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scrollTo" href="#about">A Propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scrollTo" href="#skills">Compétences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scrollTo" href="#products">Productions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Home Jumbotron -->
+      <div class="container jumbo d-flex justify-content-center align-items-center">
+          <div class="jumbotron jumbotron-fluid text-white mt-5 justify-content-center">
+            <div class="container">
+              <img src="img/logo.png" class="logo mx-auto d-block" alt="Logo">
+            </div>
+          </div>
+      </div>
+
+    <div class="jumbotron jumbotron-fluid mb-0 about pb-1" id="about">
+      <div class="container">
+        <div class="text-center pb-3">
+          <h1 class="display-4 pb-4">A propos d'Antoine DUQUENNE</h1>
+        </div>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <hr class="my-4">
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid mb-0 skills pb-1" id="skills">
+      <div class="container">
+        <div class="text-center pb-3">
+          <h1 class="display-4 pb-4">Compétences</h1>
+        </div>
+        <div class="row">
+          <div class="col">
+            <figure>
+              <figcaption class="text-center pb-2">PhotoShop</figcaption>
+              <img src="img/logos/ps.png" class="mx-auto d-block" alt="PhotoShop">
+            </figure>
+          </div>
+          <div class="col">
+            <figure>
+              <figcaption class="text-center pb-2">InDesign</figcaption>
+              <img src="img/logos/id.png" class="mx-auto d-block" alt="InDesign">
+            </figure>
+          </div>
+          <div class="col">
+            <figure>
+              <figcaption class="text-center pb-2">Illustrator</figcaption>
+              <img src="img/logos/ai.png" class="mx-auto d-block" alt="Illustrator">
+            </figure>
+          </div>
+        </div>
+        <hr class="my-4">
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid mb-0 productions pb-5" id="products">
+      <div class="container">
+        <div class="text-center pb-3">
+          <h1 class="display-4 pb-4">Quelques productions</h1>
+        </div>
+        <div class="row">
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/id_visuelle_perso/cartes_visite_horizontales.png" class="products" alt="Cartes de visite">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/id_visuelle_perso/cartes_visite_horizontales.png" target="_blank">Cartes de visite</a>
+              </div>
+            </div>
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/id_visuelle_perso/mockup_papeterie_ad.png" class="products mx-auto d-block" alt="Mockup Papeterie">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/id_visuelle_perso/mockup_papeterie_ad.png" target="_blank">Mockup Papeterie</a>
+              </div>
+            </div>
+            <div class="image p-1">
+              <img src="img/productions/super_heros.png" class="products" alt="Super Heros">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/super_heros.png" target="_blank">Animagers</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/logo_crypto/planche_crypto.png" class="products" alt="Logo OPS Coin">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/logo_crypto/planche_crypto.png" target="_blank">Logo OPS Coin</a>
+              </div>
+            </div>
+            <div class="image p-1">
+              <img src="img/productions/coureuse.png" class="products" alt="Coureuse">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/coureuse.png" target="_blank">Coureuse</a>
+              </div>
+            </div>
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/id_depannage_informatique/mockup_flyer_depanneur.png" class="products" alt="Mockup Flyers Dépanneur">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/id_depannage_informatique/mockup_flyer_depanneur.png" target="_blank">Mockup Flyers</a>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="image p-1">
+              <img src="img/productions/mise_en_page/infographie/incrustation_infographie.png" class="products" alt="Incrustation">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/mise_en_page/infographie/incrustation_infographie.png" target="_blank">Incrustation</a>
+              </div>
+            </div>
+            <div class="image p-1">
+              <img src="img/productions/mise_en_page/declinaison_colorimetrique/gamme_couleur.png" class="products mx-auto d-block" alt="Tatoo Me">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/mise_en_page/declinaison_colorimetrique/gamme_couleur.png" target="_blank">Tatoo Me</a>
+              </div>
+            </div>
+            <div class="image p-1">
+              <img src="img/productions/id_visuelles/stylisation_logotype/madoqua.png" class="products" alt="Madoqua">
+              <div class="middle">
+                <a role="button" class="btn text" href="img/productions/id_visuelles/stylisation_logotype/madoqua.png" target="_blank">Madoqua</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4 pb-5">
+          <a href="productions.html" class="view-more">Voir plus de productions</a>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="jumbotron jumbotron-fluid mb-0 footer pt-4 pb-4 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h3>Navigation</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link js-scrollTo" href="#home">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scrollTo" href="#about">A Propos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scrollTo" href="#skills">Compétences</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scrollTo" href="#products">Productions</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>Contactez-moi !</h3>
+              <p class="mt-4">E-mail : antoineduquenne@hotmail.fr</p>
+              <p>Mobile : 07 61 91 34 81</p>
+            </div>
+            <div class="col">
+              <img src="img/logo.png" class="border rounded logo-footer p-3 mx-auto d-block" alt="Logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

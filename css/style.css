@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'Walkway_Bold';
+  src: url('../fonts/walkway/Walkway_Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Walkway_Condensed';
+  src: url('../fonts/walkway/Walkway_Condensed.ttf');
+}
+
+@font-face {
+  font-family: 'Walkway_SemiBold';
+  src: url('../fonts/walkway/Walkway_SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Walkway_Black';
+  src: url('../fonts/walkway/Walkway_Black.ttf');
+}
+
+@font-face {
+  font-family: 'CaviarDreams';
+  src: url('../fonts/caviar_dreams/CaviarDreams.ttf');
+}
+
+@font-face {
+  font-family: 'CaviarDreams_Bold';
+  src: url('../fonts/caviar_dreams/CaviarDreams_Bold.ttf');
+}
+
+body, html {
+  height: 100%;
+}
+
+/*html{
+  scroll-behavior: smooth;
+}*/
+
+.logo{
+  width: 70%;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../img/bg5.jpg");
+    background-attachment: fixed;
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav .col-6 .navbar-brand{
+  color: white;
+  font-family: 'Walkway_Bold';
+  font-size: 30px;
+}
+
+nav .col-6 .navbar-brand:hover{
+  color: #ddd1ce;
+}
+
+.navbar-expand-lg {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+  color: white;
+  font-family: 'CaviarDreams_Bold';
+  font-size: 16px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover{
+  color: #ddd1ce;
+}
+
+.navbar .container .nav-item .nav-link{
+  color: white;
+  font-family: 'CaviarDreams_Bold';
+  font-size: 16px;
+}
+
+.navbar .container .nav-link:hover{
+  color: #ddd1ce;
+}
+
+.jumbo .jumbotron{
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 600px;
+}
+
+.jumbo{
+	width:100%;
+	margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.about h1, .skills h1, .productions h1, .productions h2{
+  font-family: 'Walkway_Bold';
+  color: #621f38;
+}
+
+.skills .row .col img{
+  width: 40%;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.products {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image:hover .products {
+  opacity: 0.3;
+}
+
+.image:hover .middle {
+  opacity: 1;
+}
+
+.middle .text {
+  background-color: #621f38;
+  color: white;
+  font-size: 20px;
+  padding: 12px 28px;
+}
+
+.text:hover {
+  background-color: #ddd1ce;
+  color: #621f38;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 28px;
+}
+
+.view-more{
+  color: #621f38;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+.view-more:hover{
+  text-decoration: underline;
+  color: #621f38;
+}
+
+footer .footer{
+  color: #621f38;
+  font-weight: bold;
+  background-color: #ddd1ce;
+}
+
+footer .logo-footer{
+  background-color: white;
+  width:60%;
+}
+
+footer .nav-link{
+  color: #621f38;
+  text-decoration: none;
+}
+
+footer .nav-link:hover{
+  text-decoration: underline;
+  color: #621f38;
+}
+
+footer h3{
+  font-family: 'CaviarDreams_Bold';
+}
+
+.navbar-productions{
+  background-color: #621f38;
+}
+
+/*---Sommaire---*/
+
+.sommaire ul a{
+  text-decoration: none;
+  color: #621f38;
+}
+
+.sommaire h1, .sommaire h2{
+  font-family: 'Walkway_Bold';
+  color: #621f38;
+}
+
+.sommaire ul a:hover{
+  text-decoration: underline;
+  color: #621f38;
+}
+
+.sommaire ul .som-title{
+  font-size: 23px;
+}
+
+.sommaire ul .dropdown-menu a{
+  font-size: 18px;
+}
